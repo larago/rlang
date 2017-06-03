@@ -1,8 +1,14 @@
 fn main() {
-    let t = false;
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    let tup2 = (500, 6.4, 1);
 
-    let f: bool = true;
+    let (x, y, z) = tup;
+    println!("The value of y is: {}", y);
 
-    println!("The values of t an f are: {} and {}",
-        t, f);
+    let five_hundred = tup.0;
+    let six_point_four = tup.1;
+    let one = tup.2;
+
+    println!("Values: {}, {}, {}",
+        five_hundred, six_point_four, one);
 }
