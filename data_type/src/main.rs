@@ -1,10 +1,8 @@
 fn main() {
-    let sum = 5 + 10;
-    let difference = 95.5 - 4.3;
-    let product = 4 * 30;
-    let quotient = 56.7 / 32.2;
-    let remainder = 43 % 5;
+    let t = false;
 
-    println!("Values: {},{},{},{},{}",
-        sum, difference, product, quotient, remainder)
+    let f: bool = true;
+
+    println!("The values of t an f are: {} and {}",
+        t, f);
 }
