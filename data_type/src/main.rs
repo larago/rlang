@@ -1,14 +1,12 @@
 fn main() {
-    let tup: (i32, f64, u8) = (500, 6.4, 1);
-    let tup2 = (500, 6.4, 1);
+    let a = [1, 2, 3, 4, 5];
 
-    let (x, y, z) = tup;
-    println!("The value of y is: {}", y);
+    let first = a[0];
+    let two = a[1];
 
-    let five_hundred = tup.0;
-    let six_point_four = tup.1;
-    let one = tup.2;
+    println!("The value of first is: {}", first);
+    println!("The value of two is {}", two);
 
-    println!("Values: {}, {}, {}",
-        five_hundred, six_point_four, one);
+    let element = a[10];
+    println!("The value of element is: {}", element);
 }
