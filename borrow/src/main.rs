@@ -1,17 +1,12 @@
 fn main() {
-    let mut s1 = String::from("hello");
+    let reference_to_nothing = dangle();
 
-    let len = calcaulate_length(&s1);
-
-    println!("The length of {} is {}", s1, len);
-
-    change(&mut s1);
+    println!("Thr value of dangle is {}",
+        reference_to_nothing);
 }
 
-fn calcaulate_length(s: &String) -> usize {
-    s.len()
-}
+fn dangle() -> String {
+    let s = String::from("hello");
 
-fn change(somr_string: &mut String) {
-    some_string.push_str(" world!");
+    s
 }
