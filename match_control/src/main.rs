@@ -37,4 +37,26 @@ fn main() {
         7 => println!("seven"),
         _ => (),
     }
+
+    let some_val = Some(3);
+    match some_val {
+        Some(3) => println!("three"),
+        _ => (),
+    }
+
+    if let Some(3) = some_val {
+        println!("three");
+    }
+
+    let mut count = 0;
+    match coin {
+        Coin::Quarter(state) => println!("State quarter from {:?}", state),
+        _ => count + 1,
+    }
+
+    // if let Coin::Quarter(state) = coin {
+    //     println!("State quarter from {:?}", state);
+    // } else {
+    //     count += 1;
+    // }
 }
