@@ -1,10 +1,12 @@
-// #[cfg(test)]
-// mod tests {
-//     #[test]
-//     fn it_works() {
-//     }
-// }
-
-
 pub mod network;
 pub mod client;
+
+#[cfg(test)]
+mod tests {
+    use super::client;
+
+    #[test]
+    fn it_works() {
+        client::connect();
+    }
+}
